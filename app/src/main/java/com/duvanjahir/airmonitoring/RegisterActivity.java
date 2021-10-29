@@ -34,6 +34,6 @@ public class RegisterActivity extends AppCompatActivity {
     };
 
     public void btnRegister(View view) {
-
+        System.out.println("test");
     }
 }
