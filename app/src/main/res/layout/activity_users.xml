@@ -7,7 +7,7 @@
     android:background="@color/blueSalle"
     android:orientation="vertical"
     android:weightSum="14"
-    tools:context=".RegisterActivity">
+    tools:context=".usersActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -48,7 +48,7 @@
             android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/registro_tipo_layout"
+                android:id="@+id/users_tipo_layout"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
                 app:startIconDrawable="@drawable/admin_icon">
 
                 <AutoCompleteTextView
-                    android:id="@+id/registro_tipo"
+                    android:id="@+id/users_tipo"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -67,7 +67,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/registro_nombre_layout"
+                android:id="@+id/users_nombre_layout"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -81,13 +81,13 @@
                 app:startIconDrawable="@drawable/user_icon">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/registro_nombre"
+                    android:id="@+id/users_nombre"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/registro_password_layout"
+                android:id="@+id/users_password_layout"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -101,14 +101,14 @@
                 app:startIconDrawable="@drawable/lock_icon">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/registro_password"
+                    android:id="@+id/users_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/registro_confirmacionpassword_layout"
+                android:id="@+id/users_confirmacionpassword_layout"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -122,14 +122,15 @@
                 app:startIconDrawable="@drawable/lock_icon">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/registro_confirmacionpassword"
+                    android:id="@+id/users_confirmacionpassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPassword" />
+                    android:inputType="textPassword"
+                    tools:ignore="TouchTargetSizeCheck" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/registro_email_layout"
+                android:id="@+id/users_email_layout"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -143,14 +144,14 @@
                 app:startIconDrawable="@drawable/email_icon">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/registro_email"
+                    android:id="@+id/users_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textEmailAddress" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/registro_telefono_layout"
+                android:id="@+id/users_telefono_layout"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -164,7 +165,7 @@
                 app:startIconDrawable="@drawable/phone_icon">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/registro_telefono"
+                    android:id="@+id/users_telefono"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="number" />
@@ -204,4 +205,5 @@
                 android:textColor="@color/white" />
         </LinearLayout>
     </RelativeLayout>
+
 </LinearLayout>

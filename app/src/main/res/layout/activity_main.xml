@@ -134,12 +134,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:backgroundTint="@color/green_sea"
+                    android:onClick="btnRegister"
                     android:text="Acceder"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
-                    android:textSize="16dp"
-                    android:backgroundTint="@color/green_sea"
-                    />
+                    android:textSize="16dp" />
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
@@ -157,16 +157,19 @@
                 android:text="No tiene cuenta?"
                 android:textColor="@color/textWhite"
                 android:textSize="16dp" />
+
             <TextView
                 android:id="@+id/txtRegistrar"
-                android:layout_marginLeft="12dp"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:clickable="true"
                 android:fontFamily="@font/segoe_ui_bold"
+                android:onClick="register"
                 android:text="registrese aquí"
                 android:textColor="@color/blue1"
                 android:textSize="16dp"
-                android:clickable="true"/>
+                tools:ignore="TouchTargetSizeCheck" />
         </LinearLayout>
     </RelativeLayout>
 </LinearLayout>
