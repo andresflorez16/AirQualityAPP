@@ -34,13 +34,6 @@ public class RegisterActivity extends AppCompatActivity {
     };
 
     public void btnRegister(View view) {
-        final int[] pos = new int[0];
-        userType.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                pos[0] = i;
-            }
-        });
-        Toast.makeText(this, pos[0], Toast.LENGTH_SHORT).show();
+
     }
 }
