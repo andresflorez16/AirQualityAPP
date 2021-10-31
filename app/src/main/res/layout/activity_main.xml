@@ -135,7 +135,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:backgroundTint="@color/green_sea"
-                    android:onClick="btnRegister"
+                    android:onClick="login"
                     android:text="Acceder"
                     android:textAllCaps="false"
                     android:textColor="@color/white"

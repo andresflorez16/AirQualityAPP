@@ -48,25 +48,6 @@
             android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/registro_tipo_layout"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="15dp"
-                app:startIconDrawable="@drawable/admin_icon">
-
-                <AutoCompleteTextView
-                    android:id="@+id/registro_tipo"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:inputType="none"
-                    android:text="Tipo de usuario" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/registro_nombre_layout"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
@@ -199,6 +180,7 @@
                 android:layout_weight="1"
                 android:backgroundTint="@color/green_sea"
                 android:drawableLeft="@drawable/correct_icon"
+                android:onClick="Registrar"
                 android:text="Registrar"
                 android:textAllCaps="false"
                 android:textColor="@color/white" />
